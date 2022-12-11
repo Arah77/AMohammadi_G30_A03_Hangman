@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReturningGameActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_weight="1"
+        android:background="#72BEF6E6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtWelPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/audiowide"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="134dp"
+        android:layout_height="62dp"
+        android:background="#80BEF6E6"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/hangmanImgView"
+            android:layout_width="67dp"
+            android:layout_height="115dp"
+            app:srcCompat="@drawable/hangman1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#85BEF6E6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center"
+            android:text=" "
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#9EBEF6E6"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/fldLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Input a letter"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#B8BEF6E6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtIncLetters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center"
+            android:text="Incorrect Letters"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#D1BEF6E6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtGuessedLetters"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center"
+            android:text=" "
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#EBBEF6E6"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/guessBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#147897"
+            android:fontFamily="@font/audiowide"
+            android:text="Guess!" />
+    </TableRow>
+
+</TableLayout>
